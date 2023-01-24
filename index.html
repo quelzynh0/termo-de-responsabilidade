@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Termo de Responsabilidade</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>Gerador de Termo de Responsabilidade</header>
+
+        <form action="" id="container">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Informações Colaborador(a)</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nome</label>
+                            <input type="text" id="colaborador_nome" placeholder="Nome">
+                        </div>
+
+                        <div class="input-field">
+                            <label>CPF</label>
+                            <input type="text" id="colaborador_cpf" placeholder="CPF" data-mask="999.999.999-99"
+                                minlength=11>
+
+                        </div>
+
+                        <div class="input-field">
+                            <label>Empresa</label>
+                            <select id="empresa">
+                                <option value="Osan">Osan Planos</option>
+                                <option value="Adconmed">Adconmed</option>
+                                <option value="Funerária">Funerária</option>
+                                <option value="Osanseg">Osanseg</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Itens
+                        <input type="button" id="incluirBtn" value="+" />
+                    </span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Tipo/Marca</label>
+                            <input type="text" id="tipo_marca1" placeholder="Tipo/Marca">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Número/Modelo</label>
+                            <input type="text" id="numero_modelo1" placeholder="Número/Modelo">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Série/IMEI</label>
+                            <input type="text" id="imei1" placeholder="Série/IMEI">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="botoes"> <a class="nextBtn">
+                        <span class="btnText" id="submit1">Avançar</span>
+                        <i class="uil uil-navigator"></i>
+                    </a></div>
+
+
+
+
+            </div>
+
+            <div class="buttons">
+                <div class="backBtn">
+                    <i class="uil uil-navigator"></i>
+                    <span class="btnText">Voltar</span>
+
+                </div>
+
+                <a class="sumbit">
+                    <span class="btnText" id="submit2">Imprimir</span>
+                    <i class="uil uil-navigator"></i>
+                </a>
+            </div>
+
+        </form>
+    </div>
+
+    <div id="termo">
+        <div id="topo">
+            <div class="imagem">
+                <img src="img/osan.png" id="logo">
+            </div>
+            <div class="titulo">
+                <h3>TERMO DE RESPONSABILIDADE PELA GUARDA E USO DO EQUIPAMENTO DE TRABALHO</h3>
+            </div>
+
+
+            <div id="texto">
+                <div id="table">
+                    <table id="infoColaborador" width="100%">
+                        <tr>
+                            <td width="75px">Nome:</td>
+                            <td><span id="colaborador_nome2"></span></td>
+                        </tr>
+                        <tr>
+                            <td width="75px">CPF:</td>
+                            <td><span id="colaborador_cpf2"></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <p> Recebi da empresa <span id="instituicao2"></span>, a título de empréstimo, para meu uso
+                    exclusivo, conforme determinado na lei, os equipamentos especificados neste termo de
+                    responsabilidade, comprometendo-me a mantê-los em perfeito estado de conservação, ficando ciente
+                    de que:<br>
+
+                <ol>
+                    <li>O equipamento entregue é estritamente para fins profissionais dentro do horário de
+                        trabalho;</li>
+                    <li>Se o equipamento for danificado ou inutilizado por emprego inadequado, mau uso, negligência
+                        ou extravio, a empresa me fornecerá novo equipamento e cobrará o valor de um equipamento da
+                        mesma marca ou equivalente ao do mercado;</li>
+                    <li>Em caso de dano, inutilização ou extravio do equipamento deverei comunicar imediatamente ao
+                        setor competente;</li>
+                    <li>Terminando os serviços ou no caso de rescisão do contrato de trabalho, devolverei o
+                        equipamento completo e em perfeito estado de conservação, considerando-se o tempo do uso do
+                        mesmo, ao setor competente;</li>
+                    <li>Estando os equipamentos em minha posse, estarei sujeito a inspeções sem prévio aviso.</li>
+                </ol>
+
+                </p>
+
+                <div id="table">
+                    <table id="teste">
+                        <tr>
+                            <th maxwidth="33%">TIPO/MARCA</th>
+                            <th width="33%">NÚMERO/MODELO</th>
+                            <th width="33%">SÉRIE/IMEI</th>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+
+                    <p>Qualquer evidência de não cumprimento das situações acima descritas está sujeitas à
+                        penalidade disciplinar por parte da empresa.</p>
+
+                    <p>Eu conheço as determinações sobre o uso e conservação do equipamento e assumo a
+                        responsabilidade de manter e conservar. Atesto que o bem foi entregue, em perfeito estado e
+                        com
+                        todos os componentes descritos acima.</p><br>
+                    <p>
+                        Santos,
+                        <script>
+                            document.write(new Date().getDate())
+                        </script> de
+                        <script>
+                            document.write(new Date().toLocaleString("pt-BR", { month: "long" }))
+                        </script> de
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>.
+                    </p> <br>
+
+                </div>
+
+
+                <div class="assinatura">
+                    <div class="assinatura-colaborador">
+                        <p>_______________________________</p>
+                        <p class="p2"><span id="colaborador_nome3"></span></p>
+                        <p><span id="colaborador_cpf2"></span></p>
+                    </div>
+                </div>
+            </div>
+</body>
+
+<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery.mask.min.js"></script>
+<script src="./js/script.js"></script>
+
+</html>
